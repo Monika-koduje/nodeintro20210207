@@ -1,15 +1,16 @@
-const http = require("http");
-
-const handler = (request, response) => {
-    response.end("<h1>Witajcie na nauce NodeJS<h1>")
-    console.log("Ktoś wszedł na stronę")
-}
-
-const server = http.createServer(handler);
+const express = require("express");
 const port = 3000;
 
-server.listen(port, (err) => {
-    if (err) { return console.log(err)}
-    console.log(`serwer działa na porcie: ${port}`)
+const app = express();
+
+app.get("/", function (req,res){
+    res.send("Hello World");
+})
+app.get("/about", function (req,res){
+    res.send("Strona o nas");
+})
+
+app.listen(port,()=>{
+    console.log(`Apka działa na porcie ${port}`)
 })
 

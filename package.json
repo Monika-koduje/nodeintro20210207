@@ -1,0 +1,23 @@
+{
+  "name": "20210207_node_intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcinDl/nodeintro20210207.git"
+  },
+  "keywords": [],
+  "author": "MarcinDl <marcindl@hotmail.com> (http://www.softlab.mem)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcinDl/nodeintro20210207/issues"
+  },
+  "homepage": "https://github.com/MarcinDl/nodeintro20210207#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
